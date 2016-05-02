@@ -1,9 +1,9 @@
 # Folders
-build
-lib
+bin
 
 # Generated
 Makefile
+Makefile.*
 *.o
 moc_*
 
@@ -15,6 +15,14 @@ docs/html
 */release
 */*/debug
 */*/release
+
+#examples
+helloworld
+greeting
+bodydata
+
+#custom
+custom.pri
 
 # Visual studio
 *.suo

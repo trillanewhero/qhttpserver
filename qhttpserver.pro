@@ -2,7 +2,9 @@ CONFIG += ordered
 
 TEMPLATE = subdirs
 
-SUBDIRS += src \
-           examples
+SUBDIRS += src
 
-examples.depends = src
+!isEmpty(BUILD_EXAMPLES) {
+    SUBDIRS += examples
+    examples.depends = src
+}

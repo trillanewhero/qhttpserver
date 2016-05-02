@@ -27,9 +27,7 @@ PUBLIC_HEADERS += qhttpserver.h qhttprequest.h qhttpresponse.h qhttpserverapi.h 
 HEADERS = $$PRIVATE_HEADERS $$PUBLIC_HEADERS
 SOURCES = *.cpp $$QHTTPSERVER_BASE/http-parser/http_parser.c
 
-OBJECTS_DIR = $$QHTTPSERVER_BASE/build
-MOC_DIR = $$QHTTPSERVER_BASE/build
-DESTDIR = $$QHTTPSERVER_BASE/lib
+DESTDIR = $$QHTTPSERVER_BASE/bin/$${SPEC}
 
 target.path = $$LIBDIR
 headers.path = $$INCLUDEDIR

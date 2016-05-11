@@ -128,6 +128,7 @@ void QHttpConnection::responseDone()
     QHttpResponse *response = qobject_cast<QHttpResponse *>(QObject::sender());
     if (response->m_last)
         m_socket->disconnectFromHost();
+    m_request->deleteLater();
 }
 
 /* URL Utilities */

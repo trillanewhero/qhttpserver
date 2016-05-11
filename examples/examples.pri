@@ -13,4 +13,5 @@ win32 {
     else: LIBS += -lqhttpserver
 } else {
     LIBS += -lqhttpserver
+    QMAKE_LFLAGS += -Wl,-rpath=../../bin/$${SPEC} -lqhttpserver
 }

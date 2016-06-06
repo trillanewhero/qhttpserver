@@ -7,4 +7,6 @@ isEmpty(INCLUDEDIR):INCLUDEDIR = $${PREFIX}/include
 MOC_DIR       = .moc/$${SPEC}
 OBJECTS_DIR   = .obj/$${SPEC}
 
-include(custom.pri)
+exists(custom.pri) {
+  include(custom.pri)
+}

@@ -28,8 +28,7 @@ void BodyData::handleRequest(QHttpRequest *req, QHttpResponse *resp)
 /// Responder
 
 Responder::Responder(QHttpRequest *req, QHttpResponse *resp)
-    : m_req(req)
-    , m_resp(resp)
+    : m_resp(resp)
 {
     QRegExp exp("^/user/([a-z]+$)");
     if (exp.indexIn(req->path()) == -1)
